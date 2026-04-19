@@ -2,10 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Home - Octet SMP</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="../../images/Logo.png">
+    <style>
+        @media (max-width:768px){
+            .hero{padding:30px 20px !important;margin-bottom:30px !important}
+            .hero h1{font-size:2.2em !important}
+            .hero p{font-size:0.95em !important}
+            .hero img{width:90px !important;height:90px !important}
+            .btn{padding:12px 30px !important;font-size:1em !important}
+        }
+        @media (max-width:480px){
+            .hero{padding:25px 15px !important}
+            .hero h1{font-size:1.8em !important}
+            .hero img{width:70px !important;height:70px !important}
+            .btn{padding:10px 25px !important}
+        }
+    </style>
 </head>
 <body style="margin:0;font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f0ede8;color:#2c2c2c">
 
@@ -27,14 +42,14 @@
     <h2 style="color:#ebdbbd">Octet SMP</h2>
 </div>
 
-<div style="max-width:1000px;margin:0 auto;padding:50px 30px">
-    <div style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:16px;text-align:center;margin-bottom:50px">
+<div style="max-width:1000px;margin:0 auto;padding:50px 20px">
+    <div class="hero" style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:16px;text-align:center;margin-bottom:50px">
         <img src="../../images/Logo.png" alt="Logo" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:3px solid #ebdbbd">
         <h1 style="font-size:3em;margin:0 0 15px 0;font-weight:600">Octet SMP</h1>
         <p style="font-size:1.1em;opacity:0.9;max-width:550px;margin:0 auto">A stable, friendly survival server built for the community, by the community.</p>
     </div>
     <div style="text-align:center;margin-top:30px">
-        <button onclick="window.location.href='sign_in.html'" style="padding:15px 40px;background:#2c3e2f;color:#ebdbbd;border:none;border-radius:30px;cursor:pointer;font-size:1.1em;transition:0.3s">Become a Member</button>
+        <button class="btn" onclick="window.location.href='sign_in.html'" style="padding:15px 40px;background:#2c3e2f;color:#ebdbbd;border:none;border-radius:30px;cursor:pointer;font-size:1.1em;transition:0.3s">Become a Member</button>
     </div>
 </div>
 
