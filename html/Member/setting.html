@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Settings - Octet SMP</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="../../images/Logo.png">
@@ -15,6 +15,33 @@
         .ld .dt:nth-child(3){animation-delay:0.3s}
         .ld .dt:nth-child(4){animation-delay:0.4s}
         .ld .dt:nth-child(5){animation-delay:0.5s}
+        @media (max-width:768px){
+            .profile-card{padding:20px !important}
+            .profile-card h3{font-size:1.2em !important}
+            .profile-grid{gap:15px !important}
+            .profile-grid div div:first-child{font-size:10px !important}
+            .profile-grid div div:last-child{font-size:15px !important}
+            .settings-card{padding:20px !important}
+            .settings-card h3{font-size:1.2em !important}
+            .settings-card label{font-size:12px !important}
+            .settings-card input{padding:12px !important;font-size:14px !important}
+            .settings-card button{padding:8px 24px !important;font-size:13px !important}
+            .agreement-card{padding:18px !important}
+            .agreement-card h3{font-size:1.1em !important}
+            .footer{flex-direction:column !important;text-align:center !important;gap:25px !important}
+            .header{padding:10px 15px !important}
+            .header h2{font-size:1.2em !important}
+            .menu-btn span{width:20px !important;height:2px !important}
+            .sidebar a{padding:12px 20px !important;font-size:14px !important}
+            .user-btn{padding:6px 12px !important;font-size:12px !important}
+        }
+        @media (max-width:480px){
+            .profile-card{padding:15px !important}
+            .profile-grid{gap:12px !important}
+            .profile-grid div div:last-child{font-size:14px !important}
+            .settings-card{padding:15px !important}
+            .settings-card input{padding:10px !important}
+        }
     </style>
 </head>
 <body style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f5f3ef;color:#2c2c2c">
@@ -97,9 +124,8 @@
         </button>
         <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
     </div>
-    
     <div style="position:relative">
-        <button id="userBtn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
+        <button id="userBtn" class="user-btn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
             <span id="pn">Menu</span>
             <span>▼</span>
         </button>
@@ -113,11 +139,11 @@
 </div>
 
 <div style="max-width:780px;margin:0 auto;padding:32px 20px">
-    <div style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
+    <div class="profile-card" style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
         <div style="border-bottom:1px solid #e2ddd4;padding-bottom:16px;margin-bottom:20px">
-            <h3 id="un" style="margin:0;color:#2c3e2f;font-size:1.5em;font-weight:500">Profile</h3>
+            <h3 id="un" style="margin:0;color:#2c3e2f;font-size:1.4em;font-weight:500">Profile</h3>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+        <div class="profile-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
             <div><div style="font-size:11px;color:#8e7a5e;text-transform:uppercase;letter-spacing:0.5px">Full name</div><div id="n" style="font-size:17px;color:#2c3e2f;font-weight:500;margin-top:5px">-</div></div>
             <div><div style="font-size:11px;color:#8e7a5e;text-transform:uppercase;letter-spacing:0.5px">Role</div><div id="r" style="font-size:17px;color:#2c3e2f;font-weight:500;margin-top:5px">-</div></div>
             <div><div style="font-size:11px;color:#8e7a5e;text-transform:uppercase;letter-spacing:0.5px">Minecraft name</div><div id="mpn" style="font-size:17px;color:#2c3e2f;font-weight:500;margin-top:5px">-</div></div>
@@ -125,9 +151,9 @@
         </div>
     </div>
 
-    <div style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
+    <div class="settings-card" style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
         <div style="border-bottom:1px solid #e2ddd4;padding-bottom:16px;margin-bottom:24px">
-            <h3 style="margin:0;color:#2c3e2f;font-size:1.5em;font-weight:500">Change password</h3>
+            <h3 style="margin:0;color:#2c3e2f;font-size:1.4em;font-weight:500">Change password</h3>
         </div>
         <div style="margin-bottom:20px">
             <label style="display:block;margin-bottom:8px;color:#2c3e2f;font-weight:500;font-size:13px">Current password</label>
@@ -150,9 +176,9 @@
         </div>
     </div>
 
-    <div style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
+    <div class="settings-card" style="background:#faf9f5;border-radius:24px;padding:28px;margin-bottom:24px">
         <div style="border-bottom:1px solid #e2ddd4;padding-bottom:16px;margin-bottom:24px">
-            <h3 style="margin:0;color:#2c3e2f;font-size:1.5em;font-weight:500">Edit profile</h3>
+            <h3 style="margin:0;color:#2c3e2f;font-size:1.4em;font-weight:500">Edit profile</h3>
         </div>
         <div style="margin-bottom:20px">
             <label style="display:block;margin-bottom:8px;color:#2c3e2f;font-weight:500;font-size:13px">Full name</label>
@@ -175,7 +201,7 @@
         </div>
     </div>
     
-    <div style="background:#faf9f5;border-radius:24px;padding:24px;margin-bottom:24px;border:1px solid #e2ddd4">
+    <div class="agreement-card" style="background:#faf9f5;border-radius:24px;padding:24px;margin-bottom:24px;border:1px solid #e2ddd4">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
             <div><h3 style="margin:0;color:#2c3e2f;font-size:1.2em;font-weight:500">User agreement</h3><p style="margin:5px 0 0 0;color:#8e7a5e;font-size:13px">Server rules and policies</p></div>
             <button onclick="document.getElementById('agreement').style.display='flex'" style="background:transparent;border:1px solid #2c3e2f;color:#2c3e2f;border-radius:40px;padding:8px 24px;cursor:pointer;font-size:13px;font-weight:500">View</button>
@@ -185,7 +211,6 @@
     <div style="text-align:center;margin-top:16px">
         <button id="lo" style="background:transparent;border:1px solid #c23d2b;color:#c23d2b;border-radius:40px;padding:10px 32px;cursor:pointer;font-size:14px;font-weight:500">Logout</button>
     </div>
-    
 </div>
 
 <script src="../../scripts/3LineSideBar.js"></script>
@@ -343,9 +368,9 @@
         
         setTimeout(function(){document.getElementById('sucPp').style.display='none';},3000);
     });
-        var un=localStorage.getItem('un');
-    var pn=document.getElementById('pn');
     
+    var un=localStorage.getItem('un');
+    var pn=document.getElementById('pn');
     if(un){
         pn.textContent=un;
     } else {
