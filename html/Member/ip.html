@@ -2,10 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>How to Join - Octet SMP</title>
     <link rel="icon" href="../../images/Logo.png">
     <link rel="stylesheet" href="../../style.css">
+    <style>
+        @media (max-width:768px){
+            .hero h1{font-size:2em !important}
+            .hero p{font-size:0.9em !important}
+            .hero{padding:30px 20px !important}
+            .step-card{padding:20px !important}
+            .step-num{width:35px !important;height:35px !important;font-size:18px !important}
+            .step-text{font-size:0.95em !important}
+            .step-img img{border-radius:10px !important}
+            .server-details{padding:15px !important;min-width:auto !important}
+            .server-address{font-size:0.9em !important;padding:6px 10px !important}
+            .copy-btn{padding:5px 10px !important;font-size:11px !important}
+            .footer{flex-direction:column !important;text-align:center !important;gap:25px !important}
+            .header{padding:10px 15px !important}
+            .header h2{font-size:1.2em !important}
+            .menu-btn span{width:20px !important;height:2px !important}
+            .sidebar a{padding:12px 20px !important;font-size:14px !important}
+            .user-btn{padding:6px 12px !important;font-size:12px !important}
+        }
+        @media (max-width:480px){
+            .hero h1{font-size:1.5em !important}
+            .hero{padding:20px 15px !important}
+            .step-card{padding:15px !important}
+            .step-num{width:30px !important;height:30px !important;font-size:16px !important}
+            .step-text{font-size:0.85em !important}
+            .server-details{padding:12px !important}
+            .server-address{font-size:0.8em !important}
+        }
+    </style>
 </head>
 <body style="margin:0;font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f0ede8;color:#2c2c2c">
 
@@ -19,7 +48,6 @@
     <a href="command.html" style="color:#ebdbbd">Commands</a>
     <a href="news.html" style="color:#ebdbbd">News</a>
     <a href="setting.html" style="color:#ebdbbd">Settings</a>
-
 </div>
 <div class="header" style="background:#2c3e2f;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center;padding:12px 30px">
     <div style="display:flex;align-items:center;gap:15px">
@@ -30,9 +58,8 @@
         </button>
         <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
     </div>
-    
     <div style="position:relative">
-        <button id="userBtn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
+        <button id="userBtn" class="user-btn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
             <span id="pn">Menu</span>
             <span>▼</span>
         </button>
@@ -46,52 +73,52 @@
 </div>
 
 <div style="max-width:1000px;margin:0 auto;padding:40px 20px">
-    <div style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:24px;text-align:center;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.1)">
+    <div class="hero" style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:24px;text-align:center;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.1)">
         <h1 style="font-size:2.8em;margin:0 0 15px 0;font-weight:600">How to Join</h1>
         <p style="font-size:1.1em;opacity:0.9;max-width:550px;margin:0 auto">Follow these simple steps to join the Octet SMP server</p>
     </div>
 
-    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+    <div class="step-card" style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
-            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">1</div>
+            <div class="step-num" style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">1</div>
             <div style="flex:1">
-                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Open your Minecraft Launcher, and make sure you are using version <strong style="color:#2c3e2f">26.1</strong>. If you don't have it, create a new installation and select 26.1.</p>
+                <p class="step-text" style="margin:0;color:#5a5a4a;font-size:1.1em">Open your Minecraft Launcher, and make sure you are using version <strong style="color:#2c3e2f">1.21</strong>. If you don't have it, create a new installation and select 1.21.</p>
             </div>
         </div>
-        <img src="../../images/ip/mcl.png" alt="Minecraft Launcher" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+        <div class="step-img"><img src="../../images/ip/mcl.png" alt="Minecraft Launcher" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px"></div>
     </div>
 
-    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+    <div class="step-card" style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
-            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">2</div>
+            <div class="step-num" style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">2</div>
             <div style="flex:1">
-                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Launch the game and click on the <strong style="color:#2c3e2f">Multiplayer</strong> button from the main menu.</p>
+                <p class="step-text" style="margin:0;color:#5a5a4a;font-size:1.1em">Launch the game and click on the <strong style="color:#2c3e2f">Multiplayer</strong> button from the main menu.</p>
             </div>
         </div>
-        <img src="../../images/ip/mm.png" alt="Multiplayer Menu" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+        <div class="step-img"><img src="../../images/ip/mm.png" alt="Multiplayer Menu" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px"></div>
     </div>
 
-    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+    <div class="step-card" style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
-            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">3</div>
+            <div class="step-num" style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">3</div>
             <div style="flex:1">
-                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Click the <strong style="color:#2c3e2f">Add Server</strong> button at the bottom of the multiplayer screen.</p>
+                <p class="step-text" style="margin:0;color:#5a5a4a;font-size:1.1em">Click the <strong style="color:#2c3e2f">Add Server</strong> button at the bottom of the multiplayer screen.</p>
             </div>
         </div>
-        <img src="../../images/ip/as.png" alt="Add Server Button" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+        <div class="step-img"><img src="../../images/ip/as.png" alt="Add Server Button" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px"></div>
     </div>
 
-    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+    <div class="step-card" style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
-            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">4</div>
+            <div class="step-num" style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">4</div>
             <div style="flex:1">
-                <p style="margin:0 0 15px 0;color:#5a5a4a;font-size:1.1em">Enter the following details:</p>
-                <div style="background:#f0ede8;border-radius:12px;padding:20px;display:inline-block;min-width:300px">
+                <p class="step-text" style="margin:0 0 15px 0;color:#5a5a4a;font-size:1.1em">Enter the following details:</p>
+                <div class="server-details" style="background:#f0ede8;border-radius:12px;padding:20px;display:inline-block;min-width:300px">
                     <p style="margin:0 0 10px 0"><strong style="color:#2c3e2f">Server Name:</strong> <span style="color:#5a5a4a">Octet SMP</span></p>
                     <p style="margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
                         <strong style="color:#2c3e2f">Server Address:</strong>
-                        <span id="ct" style="background:#2c3e2f;color:#ebdbbd;padding:8px 12px;border-radius:8px;font-family:'Courier New',monospace;font-size:1em">octet.aternos.me</span>
-                        <button id="cb" onclick="cT(document.getElementById('ct').innerText,this)" style="background:#2c3e2f;color:#ebdbbd;border:1px solid #3d5a3d;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12px;display:inline-flex;align-items:center;gap:6px;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">
+                        <span id="ct" class="server-address" style="background:#2c3e2f;color:#ebdbbd;padding:8px 12px;border-radius:8px;font-family:'Courier New',monospace;font-size:1em">play.octetsmp.com</span>
+                        <button id="cb" class="copy-btn" onclick="cT(document.getElementById('ct').innerText,this)" style="background:#2c3e2f;color:#ebdbbd;border:1px solid #3d5a3d;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12px;display:inline-flex;align-items:center;gap:6px;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -102,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <img src="../../images/ip/form.png" alt="Server Form" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+        <div class="step-img"><img src="../../images/ip/form.png" alt="Server Form" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px"></div>
     </div>
 
     <div style="background:#2c3e2f;color:#ebdbbd;border-radius:20px;padding:25px;text-align:center">
@@ -150,26 +177,22 @@
         b.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
         setTimeout(function(){b.innerHTML=oh;},2000);
     }
-        var un=localStorage.getItem('un');
+    var un=localStorage.getItem('un');
     var pn=document.getElementById('pn');
-    
     if(un){
         pn.textContent=un;
     } else {
         pn.textContent="Guest";
     }
-    
     document.getElementById('userBtn').addEventListener('click',function(e){
         e.stopPropagation();
         var dd=document.getElementById('dropdown');
         dd.style.display=dd.style.display==='none'?'block':'none';
     });
-    
     document.addEventListener('click',function(){
         var dd=document.getElementById('dropdown');
         if(dd) dd.style.display='none';
     });
-    
     document.getElementById('logoutBtn').addEventListener('click',function(e){
         e.preventDefault();
         localStorage.clear();
