@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Join - Octet SMP</title>
+    <link rel="icon" href="../../images/Logo.png">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body style="margin:0;font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f0ede8;color:#2c2c2c">
+
+<div class="overlay" id="overlay" style="background:rgba(44,62,47,0.9)"></div>
+<div class="sidebar" id="sidebar" style="background:#2c3e2f">
+    <a href="home.html" style="color:#ebdbbd">Home</a>
+    <a href="ip.html" style="color:#ebdbbd">How to Join</a>
+    <a href="rules.html" style="color:#ebdbbd">Rules</a>
+    <a href="sell.html" style="color:#ebdbbd">Sellable items</a>
+    <a href="resource.html" style="color:#ebdbbd">Recommended Mods & Tools</a>
+    <a href="command.html" style="color:#ebdbbd">Commands</a>
+    <a href="news.html" style="color:#ebdbbd">News</a>
+    <a href="setting.html" style="color:#ebdbbd">Settings</a>
+
+</div>
+<div class="header" style="background:#2c3e2f;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center;padding:12px 30px">
+    <div style="display:flex;align-items:center;gap:15px">
+        <button class="menu-btn" id="menuBtn">
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+        </button>
+        <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
+    </div>
+    
+    <div style="position:relative">
+        <button id="userBtn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
+            <span id="pn">Menu</span>
+            <span>▼</span>
+        </button>
+        <div id="dropdown" style="display:none;position:absolute;top:100%;right:0;background:white;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);min-width:150px;margin-top:5px;z-index:1000">
+            <a href="home.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Home</a> 
+            <a href="setting.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Settings</a>
+            <hr style="margin:5px 0">
+            <a href="#" id="logoutBtn" style="display:block;padding:10px 20px;color:#c23d2b;text-decoration:none">Logout</a>
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1000px;margin:0 auto;padding:40px 20px">
+    <div style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:24px;text-align:center;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.1)">
+        <h1 style="font-size:2.8em;margin:0 0 15px 0;font-weight:600">How to Join</h1>
+        <p style="font-size:1.1em;opacity:0.9;max-width:550px;margin:0 auto">Follow these simple steps to join the Octet SMP server</p>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
+            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">1</div>
+            <div style="flex:1">
+                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Open your Minecraft Launcher, and make sure you are using version <strong style="color:#2c3e2f">26.1</strong>. If you don't have it, create a new installation and select 26.1.</p>
+            </div>
+        </div>
+        <img src="../../images/ip/mcl.png" alt="Minecraft Launcher" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
+            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">2</div>
+            <div style="flex:1">
+                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Launch the game and click on the <strong style="color:#2c3e2f">Multiplayer</strong> button from the main menu.</p>
+            </div>
+        </div>
+        <img src="../../images/ip/mm.png" alt="Multiplayer Menu" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
+            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">3</div>
+            <div style="flex:1">
+                <p style="margin:0;color:#5a5a4a;font-size:1.1em">Click the <strong style="color:#2c3e2f">Add Server</strong> button at the bottom of the multiplayer screen.</p>
+            </div>
+        </div>
+        <img src="../../images/ip/as.png" alt="Add Server Button" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px">
+            <div style="background:#2c3e2f;color:#ebdbbd;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600">4</div>
+            <div style="flex:1">
+                <p style="margin:0 0 15px 0;color:#5a5a4a;font-size:1.1em">Enter the following details:</p>
+                <div style="background:#f0ede8;border-radius:12px;padding:20px;display:inline-block;min-width:300px">
+                    <p style="margin:0 0 10px 0"><strong style="color:#2c3e2f">Server Name:</strong> <span style="color:#5a5a4a">Octet SMP</span></p>
+                    <p style="margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                        <strong style="color:#2c3e2f">Server Address:</strong>
+                        <span id="ct" style="background:#2c3e2f;color:#ebdbbd;padding:8px 12px;border-radius:8px;font-family:'Courier New',monospace;font-size:1em">octet.aternos.me</span>
+                        <button id="cb" onclick="cT(document.getElementById('ct').innerText,this)" style="background:#2c3e2f;color:#ebdbbd;border:1px solid #3d5a3d;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12px;display:inline-flex;align-items:center;gap:6px;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            Copy
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="../../images/ip/form.png" alt="Server Form" style="max-width:100%;height:auto;display:block;border-radius:12px;margin-top:10px">
+    </div>
+
+    <div style="background:#2c3e2f;color:#ebdbbd;border-radius:20px;padding:25px;text-align:center">
+        <p style="margin:0;font-size:1.1em">Once added, the server will appear in your multiplayer list. Select it and click <strong>Join Server</strong> to start your adventure!</p>
+    </div>
+</div>
+
+<div style="background:#2c3e2f;margin-top:40px;padding:40px 20px 20px 20px">
+    <div style="max-width:1200px;margin:0 auto">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;margin-bottom:30px">
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.3em">Octet SMP</h3>
+                <p style="color:rgba(235,219,189,0.7);margin:0;font-size:14px;max-width:300px">A stable, community-driven Minecraft survival server built on trust and teamwork.</p>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Quick Links</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="https://docs.google.com/document/d/12HwjCV1-Ia8M8GsnVxfZFMM9ZMCXGmrLG4DHre74VtQ/edit?usp=sharing" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Document</a>
+                    <a href="https://discord.gg/vWQPDrpE6a" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Discord</a>
+                    <a href="news.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">News</a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Support</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="ip.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">How to Join</a>
+                    <a href="rules.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Server Rules</a>
+                    <a href="resource.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Recommended Mods & Tools</a>
+                </div>
+            </div>
+        </div>
+        <hr style="border-color:rgba(235,219,189,0.2);margin:20px 0">
+        <p style="text-align:center;color:rgba(235,219,189,0.5);font-size:12px;margin:0">&copy; 2026 Octet SMP. All rights reserved.</p>
+    </div>
+</div>
+
+<script src="../../scripts/3LineSideBar.js"></script>
+<script src="../../scripts/googlesheet.js"></script>
+<script src="../../scripts/accountcheckhave.js"></script>
+<script>
+    checkhave('../Guest/home.html',null);
+    function cT(t,b){
+        navigator.clipboard.writeText(t);
+        var oh=b.innerHTML;
+        b.innerHTML='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
+        setTimeout(function(){b.innerHTML=oh;},2000);
+    }
+        var un=localStorage.getItem('un');
+    var pn=document.getElementById('pn');
+    
+    if(un){
+        pn.textContent=un;
+    } else {
+        pn.textContent="Guest";
+    }
+    
+    document.getElementById('userBtn').addEventListener('click',function(e){
+        e.stopPropagation();
+        var dd=document.getElementById('dropdown');
+        dd.style.display=dd.style.display==='none'?'block':'none';
+    });
+    
+    document.addEventListener('click',function(){
+        var dd=document.getElementById('dropdown');
+        if(dd) dd.style.display='none';
+    });
+    
+    document.getElementById('logoutBtn').addEventListener('click',function(e){
+        e.preventDefault();
+        localStorage.clear();
+        window.location.href='../Guest/sign_in.html';
+    });
+</script>
+</body>
+</html>

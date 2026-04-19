@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Octet SMP</title>
+    <link rel="icon" href="../../images/Logo.png">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body style="margin:0;font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f0ede8;color:#2c2c2c">
+
+<div class="overlay" id="overlay" style="background:rgba(44,62,47,0.9)"></div>
+<div class="sidebar" id="sidebar" style="background:#2c3e2f">
+    <a href="home.html" style="color:#ebdbbd">Home</a>
+    <a href="ip.html" style="color:#ebdbbd">How to Join</a>
+    <a href="rules.html" style="color:#ebdbbd">Rules</a>
+    <a href="sell.html" style="color:#ebdbbd">Sellable items</a>
+    <a href="resource.html" style="color:#ebdbbd">Recommended Mods & Tools</a>
+    <a href="command.html" style="color:#ebdbbd">Commands</a>
+    <a href="news.html" style="color:#ebdbbd">News</a>
+    <a href="setting.html" style="color:#ebdbbd">Settings</a>
+</div>
+<div class="header" style="background:#2c3e2f;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center;padding:12px 30px">
+    <div style="display:flex;align-items:center;gap:15px">
+        <button class="menu-btn" id="menuBtn">
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+        </button>
+        <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
+    </div>
+    
+    <div style="position:relative">
+        <button id="userBtn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
+            <span id="pn">Menu</span>
+            <span>▼</span>
+        </button>
+        <div id="dropdown" style="display:none;position:absolute;top:100%;right:0;background:white;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);min-width:150px;margin-top:5px;z-index:1000">
+            <a href="home.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Home</a> 
+            <a href="setting.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Settings</a>
+            <hr style="margin:5px 0">
+            <a href="#" id="logoutBtn" style="display:block;padding:10px 20px;color:#c23d2b;text-decoration:none">Logout</a>
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1000px;margin:0 auto;padding:40px 20px">
+    <div style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:24px;text-align:center;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.1)">
+        <h1 style="font-size:2.8em;margin:0 0 15px 0;font-weight:600">Commands</h1>
+        <p style="font-size:1.1em;opacity:0.9;max-width:550px;margin:0 auto">To make gameplay smoother and more community-friendly, Octet SMP provides several <strong style="color:#ebdbbd">/trigger</strong> commands.</p>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <polyline points="8 12 12 16 16 12"></polyline>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger TPA</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Request to teleport to another player.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger TPA</code><span style="color:#5a5a4a;font-size:14px">- A list of online players appears</span></div>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</div><span style="color:#5a5a4a;font-size:14px">Click on the player you want to teleport to - Request sent</span></div>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">3</div><span style="color:#5a5a4a;font-size:14px">Target clicks "Accept" in chat - Teleported immediately</span></div>
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">4</div><span style="color:#5a5a4a;font-size:14px">No response within 60 seconds - Request expires</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-5v-7H9v7H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger home</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Teleport to your set home location.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger sethome</code><span style="color:#5a5a4a;font-size:14px">- Set your current location as home</span></div>
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger home</code><span style="color:#5a5a4a;font-size:14px">- Teleport back to saved home</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H5.78a1.65 1.65 0 0 0-1.51 1 1.65 1.65 0 0 0 .33 1.82l.07.08A10 10 0 0 0 12 17.66a10 10 0 0 0 6.18-2.58l.07-.08z"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger sethome</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Set your current location as your home.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><span style="color:#5a5a4a;font-size:14px">Go to desired location</span></div>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger sethome</code><span style="color:#5a5a4a;font-size:14px">- Home saved</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger spawn</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Teleport to the world spawn point.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger spawn</code><span style="color:#5a5a4a;font-size:14px">- Teleported to world spawn</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger lobby</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Teleport to the central lobby hub (no mobs, no PvP).</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger lobby</code><span style="color:#5a5a4a;font-size:14px">- Teleported to safe lobby area</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger shop</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Open the server shop interface.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger shop</code><span style="color:#5a5a4a;font-size:14px">- Chest menu opens</span></div>
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</div><span style="color:#5a5a4a;font-size:14px">Click item to buy - Added to inventory, price deducted</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger shop_sell</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Sell items to the server shop.</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger shop_sell</code><span style="color:#5a5a4a;font-size:14px">- Chest menu opens</span></div>
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">2</div><span style="color:#5a5a4a;font-size:14px">Put items in chest - Balance added automatically</span></div>
+        </div>
+    </div>
+
+    <div style="background:#faf9f5;border-radius:20px;padding:30px;margin-bottom:25px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </div>
+            <h3 style="color:#2c3e2f;margin:0;font-size:1.8em">/trigger state</h3>
+        </div>
+        <p style="color:#5a5a4a;margin:0 0 20px 0;font-size:1.05em">Display your current stats (playtime, kills, deaths, money).</p>
+        <div style="background:#f0ede8;border-radius:12px;padding:20px">
+            <div style="display:flex;align-items:center;gap:12px"><div style="background:#2c3e2f;color:#ebdbbd;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">1</div><code style="background:#e0dcd3;padding:6px 12px;border-radius:8px;font-size:14px">/trigger state</code><span style="color:#5a5a4a;font-size:14px">- Stats appear in chat</span></div>
+        </div>
+    </div>
+
+    <div style="background:#2c3e2f;border-radius:20px;padding:30px;margin-top:20px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:15px">
+            <div style="background:white;width:45px;height:45px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(0,0,0,0.05)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c3e2f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+            <h3 style="color:#ebdbbd;margin:0;font-size:1.6em">Important Notes</h3>
+        </div>
+        <ul style="margin:0;padding-left:20px;color:rgba(235,219,189,0.8);font-size:1.05em;line-height:1.8">
+            <li>Commands are case-sensitive. Type them exactly as shown.</li>
+            <li>Abuse of commands (e.g., spamming teleport requests) may result in punishment.</li>
+            <li>These commands are designed to support stable survival gameplay and community interaction.</li>
+        </ul>
+    </div>
+</div>
+
+<div style="background:#2c3e2f;margin-top:40px;padding:40px 20px 20px 20px">
+    <div style="max-width:1200px;margin:0 auto">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;margin-bottom:30px">
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.3em">Octet SMP</h3>
+                <p style="color:rgba(235,219,189,0.7);margin:0;font-size:14px;max-width:300px">A stable, community-driven Minecraft survival server built on trust and teamwork.</p>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Quick Links</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="https://docs.google.com/document/d/12HwjCV1-Ia8M8GsnVxfZFMM9ZMCXGmrLG4DHre74VtQ/edit?usp=sharing" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Document</a>
+                    <a href="https://discord.gg/vWQPDrpE6a" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Discord</a>
+                    <a href="news.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">News</a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Support</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="ip.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">How to Join</a>
+                    <a href="rules.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Server Rules</a>
+                    <a href="resource.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Recommended Mods & Tools</a>
+                </div>
+            </div>
+        </div>
+        <hr style="border-color:rgba(235,219,189,0.2);margin:20px 0">
+        <p style="text-align:center;color:rgba(235,219,189,0.5);font-size:12px;margin:0">&copy; 2026 Octet SMP. All rights reserved.</p>
+    </div>
+</div>
+
+<script src="../../scripts/3LineSideBar.js"></script>
+<script src="../../scripts/googlesheet.js"></script>
+<script src="../../scripts/accountcheckhave.js"></script>
+<script>checkhave('../Guest/home.html',null);
+    var un=localStorage.getItem('un');
+    var pn=document.getElementById('pn');
+    
+    if(un){
+        pn.textContent=un;
+    } else {
+        pn.textContent="Guest";
+    }
+    
+    document.getElementById('userBtn').addEventListener('click',function(e){
+        e.stopPropagation();
+        var dd=document.getElementById('dropdown');
+        dd.style.display=dd.style.display==='none'?'block':'none';
+    });
+    
+    document.addEventListener('click',function(){
+        var dd=document.getElementById('dropdown');
+        if(dd) dd.style.display='none';
+    });
+    
+    document.getElementById('logoutBtn').addEventListener('click',function(e){
+        e.preventDefault();
+        localStorage.clear();
+        window.location.href='../Guest/sign_in.html';
+    });
+</script>
+</body>
+</html>

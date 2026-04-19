@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Mods & Tools - Octet SMP</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" href="../../images/Logo.png">
+</head>
+<body style="margin:0;font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f0ede8;color:#2c2c2c">
+
+<div class="overlay" id="overlay" style="background:rgba(44,62,47,0.9)"></div>
+<div class="sidebar" id="sidebar" style="background:#2c3e2f">
+    <a href="home.html" style="color:#ebdbbd">Home</a>
+    <a href="ip.html" style="color:#ebdbbd">How to Join</a>
+    <a href="rules.html" style="color:#ebdbbd">Rules</a>
+    <a href="sell.html" style="color:#ebdbbd">Sellable items</a>
+    <a href="resource.html" style="color:#ebdbbd">Recommended Mods & Tools</a>
+    <a href="command.html" style="color:#ebdbbd">Commands</a>
+    <a href="news.html" style="color:#ebdbbd">News</a>
+    <a href="setting.html" style="color:#ebdbbd">Settings</a>
+</div>
+<div class="header" style="background:#2c3e2f;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center;padding:12px 30px">
+    <div style="display:flex;align-items:center;gap:15px">
+        <button class="menu-btn" id="menuBtn">
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+            <span style="background:#ebdbbd"></span>
+        </button>
+        <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
+    </div>
+    
+    <div style="position:relative">
+        <button id="userBtn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
+            <span id="pn">Menu</span>
+            <span>▼</span>
+        </button>
+        <div id="dropdown" style="display:none;position:absolute;top:100%;right:0;background:white;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);min-width:150px;margin-top:5px;z-index:1000">
+            <a href="home.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Home</a> 
+            <a href="setting.html" style="display:block;padding:10px 20px;color:#2c3e2f;text-decoration:none">Settings</a>
+            <hr style="margin:5px 0">
+            <a href="#" id="logoutBtn" style="display:block;padding:10px 20px;color:#c23d2b;text-decoration:none">Logout</a>
+        </div>
+    </div>
+</div>
+
+<div style="max-width:1000px;margin:0 auto;padding:40px 20px">
+    <div style="background:#2c3e2f;color:#ebdbbd;padding:50px 40px;border-radius:24px;text-align:center;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.1)">
+        <h1 style="font-size:2.8em;margin:0 0 15px 0;font-weight:600">Recommended Mods & Tools</h1>
+        <p style="font-size:1.1em;opacity:0.9;max-width:550px;margin:0 auto">To improve performance and visuals, we recommend installing Fabric and the following mods. Make sure you are using Minecraft version 1.21.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:30px">
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">🖥️</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Fabric Installer</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Required to use mods</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">Installs Fabric Loader. Required to use mods.</p>
+            <a href="https://fabricmc.net/use/installer/" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Fabric Installer →</a>
+        </div>
+
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">🔌</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Fabric API</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Required for most mods</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">Required for most Fabric mods to work properly.</p>
+            <a href="https://modrinth.com/mod/fabric-api" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Fabric API →</a>
+        </div>
+
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">⚡</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Sodium</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Performance mod</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">Increases FPS and improves rendering performance.</p>
+            <a href="https://modrinth.com/mod/sodium/versions" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Sodium →</a>
+        </div>
+
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">🎨</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Iris</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Shader support</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">Adds shader support. Works together with Sodium.</p>
+            <a href="https://modrinth.com/mod/iris/versions" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Iris →</a>
+        </div>
+
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">🖌️</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Complementary Shaders – Reimagined</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Shader pack</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">A beautiful and well-optimized shader pack.</p>
+            <a href="https://modrinth.com/shader/complementary-reimagined/version/r5.2.2" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Complementary Shaders →</a>
+        </div>
+
+        <div style="background:#faf9f5;border-radius:20px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.06);border:1px solid #e0dcd3;transition:all 0.3s ease" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.06)'">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+                <div style="background:#2c3e2f;color:#ebdbbd;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px">💡</div>
+                <div>
+                    <h2 style="margin:0 0 5px 0;color:#2c3e2f;font-size:1.5em">Full Brightness</h2>
+                    <p style="margin:0;color:#8e7a5e;font-size:0.85em">Utility resource pack</p>
+                </div>
+            </div>
+            <p style="margin:0 0 20px 0;color:#5a5a4a;font-size:1.05em;line-height:1.6">A resource pack that makes everything fully bright, improving visibility in dark areas.</p>
+            <a href="https://www.curseforge.com/minecraft/texture-packs/fullbright-ub" target="_blank" style="display:inline-block;background:#2c3e2f;color:#ebdbbd;padding:10px 25px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s" onmouseover="this.style.background='#1e2a20'" onmouseout="this.style.background='#2c3e2f'">Download Full Brightness →</a>
+        </div>
+    </div>
+</div>
+
+<div style="background:#2c3e2f;margin-top:40px;padding:40px 20px 20px 20px">
+    <div style="max-width:1200px;margin:0 auto">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;margin-bottom:30px">
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.3em">Octet SMP</h3>
+                <p style="color:rgba(235,219,189,0.7);margin:0;font-size:14px;max-width:300px">A stable, community-driven Minecraft survival server built on trust and teamwork.</p>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Quick Links</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="https://docs.google.com/document/d/12HwjCV1-Ia8M8GsnVxfZFMM9ZMCXGmrLG4DHre74VtQ/edit?usp=sharing" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Document</a>
+                    <a href="https://discord.gg/vWQPDrpE6a" target="_blank" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Discord</a>
+                    <a href="news.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">News</a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color:#ebdbbd;margin:0 0 15px 0;font-size:1.1em">Support</h3>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                    <a href="ip.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">How to Join</a>
+                    <a href="rules.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Server Rules</a>
+                    <a href="resource.html" style="color:rgba(235,219,189,0.7);text-decoration:none;font-size:14px;transition:0.3s" onmouseover="this.style.color='#ebdbbd'" onmouseout="this.style.color='rgba(235,219,189,0.7)'">Recommended Mods & Tools</a>
+                </div>
+            </div>
+        </div>
+        <hr style="border-color:rgba(235,219,189,0.2);margin:20px 0">
+        <p style="text-align:center;color:rgba(235,219,189,0.5);font-size:12px;margin:0">&copy; 2026 Octet SMP. All rights reserved.</p>
+    </div>
+</div>
+
+<script src="../../scripts/3LineSideBar.js"></script>
+<script src="../../scripts/googlesheet.js"></script>
+<script src="../../scripts/accountcheckhave.js"></script>
+<script>
+    checkhave('../Guest/home.html',null);
+        var un=localStorage.getItem('un');
+    var pn=document.getElementById('pn');
+    
+    if(un){
+        pn.textContent=un;
+    } else {
+        pn.textContent="Guest";
+    }
+    
+    document.getElementById('userBtn').addEventListener('click',function(e){
+        e.stopPropagation();
+        var dd=document.getElementById('dropdown');
+        dd.style.display=dd.style.display==='none'?'block':'none';
+    });
+    
+    document.addEventListener('click',function(){
+        var dd=document.getElementById('dropdown');
+        if(dd) dd.style.display='none';
+    });
+    
+    document.getElementById('logoutBtn').addEventListener('click',function(e){
+        e.preventDefault();
+        localStorage.clear();
+        window.location.href='../Guest/sign_in.html';
+    });
+</script>
+</body>
+</html>
