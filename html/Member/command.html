@@ -7,25 +7,38 @@
     <link rel="icon" href="../../images/Logo.png">
     <link rel="stylesheet" href="../../style.css">
     <style>
+        *{box-sizing:border-box}
         @media (max-width:768px){
-            .hero h1{font-size:2.2em !important}
-            .hero p{font-size:0.95em !important}
-            .hero{padding:35px 25px !important}
-            .cmd-card{padding:20px !important}
-            .cmd-card h3{font-size:1.4em !important}
-            .cmd-card .icon-box{width:40px !important;height:40px !important}
-            .cmd-card .icon-box svg{width:20px !important;height:20px !important}
+            .hero h1{font-size:2em !important}
+            .hero p{font-size:0.9em !important}
+            .hero{padding:30px 20px !important;margin-bottom:25px !important}
+            .cmd-card{padding:20px !important;margin-bottom:20px !important}
+            .cmd-card h3{font-size:1.3em !important}
+            .cmd-card .icon-box{width:38px !important;height:38px !important}
+            .cmd-card .icon-box svg{width:18px !important;height:18px !important}
+            .cmd-card p{font-size:0.95em !important;margin-bottom:15px !important}
             .step-box{padding:15px !important}
-            .step-num{width:22px !important;height:22px !important;font-size:11px !important}
-            .step-text{font-size:13px !important}
-            .footer{flex-direction:column !important;text-align:center !important;gap:25px !important}
-            .user-btn{padding:6px 12px !important;font-size:13px !important}
+            .step-num{width:22px !important;height:22px !important;font-size:10px !important}
+            .step-text{font-size:12px !important}
+            .step-box code{font-size:11px !important;padding:4px 8px !important}
+            .footer{padding:30px 15px 15px 15px !important}
+            .footer h3{font-size:1.1em !important}
+            .footer p{font-size:12px !important}
+            .user-btn{padding:6px 12px !important;font-size:12px !important}
+            .header{padding:10px 15px !important}
+            .header h2{font-size:1.2em !important}
+            .menu-btn span{width:20px !important;height:2px !important}
+            .sidebar a{padding:12px 20px !important;font-size:14px !important}
         }
         @media (max-width:480px){
-            .hero h1{font-size:1.8em !important}
-            .hero{padding:25px 15px !important}
-            .cmd-card h3{font-size:1.2em !important}
+            .hero h1{font-size:1.6em !important}
+            .hero{padding:20px 15px !important}
+            .cmd-card h3{font-size:1.1em !important}
             .cmd-card{padding:15px !important}
+            .step-box{padding:12px !important}
+            .step-text{font-size:11px !important}
+            .step-num{width:20px !important;height:20px !important;font-size:9px !important}
+            .step-box code{font-size:10px !important}
         }
     </style>
 </head>
@@ -51,7 +64,6 @@
         </button>
         <h2 style="color:#ebdbbd;margin:0">Octet SMP</h2>
     </div>
-    
     <div style="position:relative">
         <button id="userBtn" class="user-btn" style="background:#ebdbbd;color:#2c3e2f;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-size:14px;display:flex;align-items:center;gap:8px">
             <span id="pn">Menu</span>
@@ -265,24 +277,16 @@
 checkhave('../Guest/home.html',null);
 var un=localStorage.getItem('un');
 var pn=document.getElementById('pn');
-
-if(un){
-    pn.textContent=un;
-} else {
-    pn.textContent="Guest";
-}
-
+if(un){pn.textContent=un;}else{pn.textContent="Guest";}
 document.getElementById('userBtn').addEventListener('click',function(e){
     e.stopPropagation();
     var dd=document.getElementById('dropdown');
     dd.style.display=dd.style.display==='none'?'block':'none';
 });
-
 document.addEventListener('click',function(){
     var dd=document.getElementById('dropdown');
     if(dd) dd.style.display='none';
 });
-
 document.getElementById('logoutBtn').addEventListener('click',function(e){
     e.preventDefault();
     localStorage.clear();
