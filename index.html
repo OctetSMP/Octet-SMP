@@ -61,7 +61,17 @@
     <script src="scripts/googlesheet.js"></script>
 <script src="scripts/accountcheckhave.js"></script>
     <script>
-        checkhave('html/Guest/home.html', 'html/Member/home.html');
+        //checkhave('html/Guest/home.html', 'html/Member/home.html');
+        function hashf(string){
+            let hash=0;
+            if(string.length==0)return hash;
+            for(let i=0;i<string.length;i++){
+                hash=((hash<<5)-hash)+string.charCodeAt(i);
+                hash|=0;
+            }
+            return hash;
+        }
+
     </script>
 </body>
 </html>
