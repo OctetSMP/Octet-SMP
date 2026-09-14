@@ -63,13 +63,10 @@
     <script>
         //checkhave('html/Guest/home.html', 'html/Member/home.html');
         function hashf(string){
-            const crypto=require("crypto");
-            const hash=crypto
-                .createHash("sha256")
-                .update(string)
-                .digest("hex");
-
-            return hash;
+            return [...string].reduce((hash, char) => {
+        return char.charCodeAt(0)
+            + ((hash << 5) - hash);
+    }, 0);
         }
 
     </script>
